@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>目指せ16連写</title>
+    <link rel="stylesheet" href="dist/app.css">
+  </head>
+  <body>
+    <div class="main" id="app"></div>
+    <div class="main" id="app2"></div>
+
+    <script type="text/template" id="template1">
+      <button class="btn js-click-like"><span class="btn__num"><%=like%></span>いいね</button>
+      <h1 class="name"><%= name %></h1>
+      <p class="text"><%= text %></p>
+    </script>
+    <!--ここは独自追加-->
+    <script type="text/template" id="template2">
+      <button class="btn js-click-shot"><span class="btn__num"><%=shot%></span>連射</button>
+      <h1 class="name"><%= player %></h1>
+      <p class="text"><%= profile %></p>
+    </script>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
+
